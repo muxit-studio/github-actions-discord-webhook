@@ -6,4 +6,4 @@ tool(s).
 
 ## Tools
 
-- [`test.sh`](local_env_run.sh) Setup dummy variables and run send.sh!
+- [`test.sh`](run.sh) Setup dummy variables and run send.sh!
