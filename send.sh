@@ -1,9 +1,15 @@
 #!/bin/bash
+#
 # This original source of this code: https://github.com/DiscordHooks/travis-ci-discord-webhook
 # The same functionality from TravisCI is needed for Github Actions
 #
 # For info on the GITHUB prefixed variables, visit:
 # https://help.github.com/en/articles/virtual-environments-for-github-actions#environment-variables
+
+if [[ ! -x "$(command -v jq)" ]]; then
+  echo "WARNING: 'jq' is not installed, installing..."
+  sudo apt-get install jq
+fi
 
 AVATAR="https://github.com/actions.png"
 
